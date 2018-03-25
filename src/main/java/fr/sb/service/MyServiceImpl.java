@@ -1,5 +1,7 @@
 package fr.sb.service;
 
+import fr.sb.mapper.CityMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -8,9 +10,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class MyServiceImpl implements MyService {
 
+    @Autowired
+    CityMapper cityMapper;
+
 
     @Override
     public String sayHello() {
-        return "Hello Service";
+        return cityMapper.findByState("CA").toString();
     }
 }
