@@ -37,8 +37,21 @@
                 Will create and register an instance of a SqlSessionFactory passing that DataSource as an input using the SqlSessionFactoryBean.
                 Will create and register an instance of a SqlSessionTemplate got out of the SqlSessionFactory.
                 Autoscan your mappers, link them to the SqlSessionTemplate and register them to Spring context so they can be injected into your beans.
+                http://www.mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/
             -->
         </dependency>
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <!-- par defaut login user
+        password qui apparait dans la console :
+        Using default security password: 9eef2318-0d2a-448b-acf1-a1a28ab36584
+        sinon on peut fixer le password en ajoutant dans application.properties
+        security.user.password=password
+        -->
 
 
     </dependencies>
