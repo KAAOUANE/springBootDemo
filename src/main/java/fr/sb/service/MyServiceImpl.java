@@ -1,6 +1,6 @@
 package fr.sb.service;
 
-import fr.sb.mapper.CityMapper;
+import fr.sb.mappers.CityMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
