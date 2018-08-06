@@ -15,8 +15,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
-@ContextConfiguration(classes=MyConfiguration.class)
+@SpringBootTest(classes = {MyConfiguration.class})
 public class CityMapperTest {
 
     @Autowired
